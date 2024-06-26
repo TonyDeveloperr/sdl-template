@@ -30,8 +30,8 @@ int main(int argc, char* args[])
 
     int textureWidth = 1920;
     int textureHeight = 1080;
-    int posX = (windowWidth - textureWidth) / 2;
-    int posY = (windowHeight - textureHeight) / 2;
+    float posX = (windowWidth - textureWidth) / 2;
+    float posY = (windowHeight - textureHeight) / 2;
 
 
     bool gameRunning = true;
