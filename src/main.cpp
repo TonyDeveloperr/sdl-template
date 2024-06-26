@@ -15,7 +15,7 @@ int main(int argc, char* args[])
 
     RenderWindow window("TEMPLATE", 1280, 720);
 
-    SDL_Texture* logoTexture = window.LoadTexture("./assets/sprites/crimson.png");
+    SDL_Texture* logoTexture = window.LoadTexture("./assets/sprites/sdl-template-title.png");
     if (logoTexture == nullptr)
     {
         std::cout << "Failed to load texture. Exiting..." << std::endl;
@@ -28,8 +28,8 @@ int main(int argc, char* args[])
     int windowWidth, windowHeight;
     SDL_GetWindowSize(window.GetWindow(), &windowWidth, &windowHeight);
 
-    int textureWidth = 100;
-    int textureHeight = 100;
+    int textureWidth = 1920;
+    int textureHeight = 1080;
     int posX = (windowWidth - textureWidth) / 2;
     int posY = (windowHeight - textureHeight) / 2;
 
